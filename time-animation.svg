@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100">
+  <text x="10" y="50" font-family="Arial" font-size="16">
+    <tspan>Current: </tspan>
+    <tspan id="time">
+      <animate attributeName="textContent" 
+               begin="0s" dur="60s" repeatCount="indefinite"
+               values="00:00;00:01;00:02;...;23:59"/>
+    </tspan>
+  </text>
+</svg>
