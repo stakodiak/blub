@@ -1,2 +1,2 @@
 # blub
-read me
+![](./foo.svg)
