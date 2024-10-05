@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+  <style>
+    :root { --count: 0; }
+    #counter::after { content: var(--count); }
+  </style>
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <button onclick="this.style.setProperty('--count', parseInt(getComputedStyle(this).getPropertyValue('--count')) + 1)">
+        Clicks: <span id="counter"></span>
+      </button>
+    </div>
+  </foreignObject>
+</svg>
