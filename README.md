@@ -26,3 +26,5 @@ testing whack-a-mole in a README
 
 
 ---
+## 4. Hover state
+![](./pencil.svg)
