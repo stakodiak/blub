@@ -1,6 +1,6 @@
 # blub
 testing whack-a-mole in a README 
-
+![](./css-vars-x.svg)
 ## 1. Include: Failed
 ![](./foo.svg)
 
