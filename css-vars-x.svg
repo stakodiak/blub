@@ -1,34 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="300" pointer-events="all" height="300" viewBox="0 0 300 300"><style>
-         rect {
-            fill: #ddd;
-            outline: none;
-            cursor: pointer;
-        }
+  rect {
+    fill: #ddd;
+    outline: none;
+    cursor: pointer;
+  }
 
-        svg text {
-            font-size: 10px;
-            font-family: Arial, sans-serif;
-            text-anchor: middle;
-fill: hsl(0, 0%, 26%);
-            dominant-baseline: central;
-            pointer-events: none;
-        }
+  svg text {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    text-anchor: middle;
+    fill: hsl(0, 0%, 26%);
+    dominant-baseline: central;
+    pointer-events: none;
+  }
 
 
-rect {
-transition: all 2s cubic-bezier(1,-1.22,1,-0.09);
-fill: oklch(
-		93.44% 0.1312 calc(
-			300 + 10 * mod(var(--a, var(--n)), 80)
-		)
-	);
-}
+  rect {
+    transition: all 2s cubic-bezier(1, -1.22, 1, -0.09);
+    fill: oklch(93.44% 0.1312 calc(300 + 10 * mod(var(--a, var(--n)), 80)));
+  }
 
-rect:hover {
-  transition-duration: 0s;
-  fill: white;
-  --a: calc(100);
-}
+  rect:hover {
+    transition-duration: 0s;
+    fill: white;
+    --a: calc(100);
+  }
+
 
 
 
