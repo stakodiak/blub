@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">
+  <style>
+    /* State representation */
+    #state { fill: #000; }
+    
+    /* State transitions */
+    #state:hover ~ #transition1 { visibility: visible; }
+    #state:hover ~ #transition2 { visibility: hidden; }
+    
+    /* Computation */
+    #transition1:hover ~ #result { fill: #f00; }
+    #transition2:hover ~ #result { fill: #0f0; }
+    
+    /* Chain reactions */
+    #result:hover ~ #state { cx: 150; }
+  </style>
+
+  <circle id="state" cx="50" cy="50" r="10"/>
+  <rect id="transition1" x="100" y="40" width="20" height="20" visibility="hidden"/>
+  <rect id="transition2" x="140" y="40" width="20" height="20" visibility="visible"/>
+  <circle id="result" cx="200" cy="50" r="10" fill="#000"/>
+</svg>
